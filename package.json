@@ -1,0 +1,27 @@
+{
+  "name": "react-web-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesmcallister/react-web-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesmcallister/react-web-template/issues"
+  },
+  "homepage": "https://github.com/jamesmcallister/react-web-template#readme",
+  "devDependencies": {
+    "karma": "0.13.15",
+    "karma-mocha": "0.2.1",
+    "karma-phantomjs-launcher": "0.2.1",
+    "mocha": "2.3.4",
+    "phantomjs": "1.9.19"
+  }
+}
