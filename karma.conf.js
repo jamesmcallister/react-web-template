@@ -16,7 +16,7 @@ module.exports = function(config) {
     // List of files / patterns to load in the browser
     files: [
       'dist/js/**.js',
-      'test/**Spec.js',
+      'dist/test/**.js',
     ],
 
 

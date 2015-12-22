@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "karma start",
-    "karmainit": "karma init"
+    "clean" : "rm -rf ./dist",
+    "purge" : "npm run clean && rm -rf ./node_modules",
+    "test-webpack" : "cd test && webpack",
+    "test-karma": "karma start",
+    "test" : "npm run test-webpack && npm run test-karma",
+    "compile" : "cd src && webpack"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,7 @@
     "karma-mocha": "0.2.1",
     "karma-phantomjs-launcher": "0.2.1",
     "mocha": "2.3.4",
-    "phantomjs": "1.9.19"
+    "phantomjs": "1.9.19",
+    "webpack": "1.12.9"
   }
 }
