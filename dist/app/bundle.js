@@ -57,8 +57,9 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var mainElement = document.querySelector("#main");
-	if (mainElement == null) {
+	if (!mainElement) {
 	  mainElement = document.createElement("div");
+	  mainElement.setAttribute("id", "main");
 	  var bodyElement = document.getElementsByTagName("body").item(0);
 	  bodyElement.appendChild(mainElement);
 	}
