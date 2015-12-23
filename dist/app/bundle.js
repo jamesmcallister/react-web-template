@@ -46,6 +46,10 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -66,10 +70,11 @@
 	    );
 	  }
 	});
-
-	SetInterval(function () {
-	  ReactDOM.render(_react2.default.createElement(HelloWorld, { date: new Date() }), document.getElementById('example'));
-	}, 500);
+	exports.default = {
+	  path: '/',
+	  component: HelloWorld,
+	  childRoutes: [{ path: 'hello', component: HelloWorld }]
+	};
 
 /***/ },
 /* 1 */

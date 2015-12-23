@@ -9,7 +9,8 @@
     "test-webpack": "cd test && webpack",
     "test-karma": "karma start",
     "test": "npm run test-webpack && npm run test-karma",
-    "compile": "cd src && webpack"
+    "compile": "cd src/js && webpack",
+    "start": "node --harmony ./express/start.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "babel-loader": "6.2.0",
     "babel-preset-es2015": "6.3.13",
     "babel-preset-react": "6.3.13",
+    "history": "1.13.1",
     "karma": "0.13.15",
     "karma-mocha": "0.2.1",
     "karma-phantomjs-launcher": "0.2.1",
@@ -34,6 +36,11 @@
     "phantomjs": "1.9.19",
     "react": "0.14.3",
     "react-dom": "0.14.3",
+    "react-router": "1.0.2",
+    "react-router-express": "1.0.0",
     "webpack": "1.12.9"
+  },
+  "dependencies": {
+    "express": "4.13.3"
   }
 }
