@@ -53,8 +53,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./appSpec.js": 2,
-		"./setupSpec.js": 8
+		"./specs/appSpec.js": 2,
+		"./specs/setupSpec.js": 8
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
