@@ -15,4 +15,8 @@
     git pull # maybe okay with merge ff-only set in git config
     
 
-Jenkins should run npm run jenkins
+Jenkins should run 
+
+    npm run jenkins
+    
+    
