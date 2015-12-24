@@ -10,23 +10,26 @@ module.exports = {
     filename: 'bundle.js',
   },
   module: {
-  loaders: [{
-    test: /\.js$/,
-    exclude: /(node_modules)/,
-    loader: ['babel'],
-    query:
-    {
-          presets: ['es2015', 'react'],
-        },
-  },
-  { test:   /\.css$/,
+    loaders: [{
+      test: /\.js$/,
+      exclude: /(node_modules)/,
+      loader: ['babel'],
+      query: {
+        presets: ['es2015', 'react'],
+      },
+    },
+      // webpack will process any css file that's imported in to the js file
+      {
+        test: /\.css$/,
         loader: 'style-loader!css-loader!cssnext-loader',
       },
-],},
-  postcss: [
-        nested,
-        cssnext,
-        autoprefixer,
-        csswring,
     ],
+  },
+  postcss: [
+    nested,
+    cssnext,
+    autoprefixer,
+    csswring,
+  ],
+
 };

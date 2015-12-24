@@ -1,9 +1,13 @@
+
+import router from '../../src/js/router.js';
 var assert = require('assert');
-describe('Array2', function() {
+describe('Test index.html content', function() {
   describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(5));
-      assert.equal(-1, [1,2,3].indexOf(0));
+    var title = 'Your name here';
+    it('should containt ' + title, function() {
+      var innerHTML = document.querySelector('#main').innerHTML;
+      var a = innerHTML.indexOf(title);
+      assert.notEqual(a,-1, "The index of '" + title+ "'  is -1 so not found in " + innerHTML );
     });
   });
 });

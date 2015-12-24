@@ -1,8 +1,17 @@
 # react-web-template
 
-git add .
-git status
-git commit -am ""
-git pull
-git dont know what im doing
-git pull --rebase
+## Git dos
+
+    git add .
+    git status
+    git commit -am "A message here"
+    git pull
+    # git don't know what im doing
+    git pull --rebase
+
+## Git don'ts
+
+    git merge
+    git pull # maybe okay with merge ff-only set in git config
+    
+

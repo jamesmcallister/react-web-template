@@ -15,6 +15,7 @@ module.exports = function(config) {
 
     // List of files / patterns to load in the browser
     files: [
+      './node_modules/phantomjs-polyfill/bind-polyfill.js',
       'dist/js/**.js',
       'dist/test/**.js',
     ],
