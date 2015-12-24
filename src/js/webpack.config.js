@@ -1,3 +1,8 @@
+var nested = require('postcss-nested');
+var cssnext = require('cssnext');
+var autoprefixer = require('autoprefixer');
+var csswring = require('csswring');
+
 module.exports = {
   entry: './router.js',
   output: {
@@ -9,9 +14,19 @@ module.exports = {
     test: /\.js$/,
     exclude: /(node_modules)/,
     loader: ['babel'],
-    query: {
-      presets: [ 'react','es2015'],
-    },
-  },],
-},
+    query:
+    {
+          presets: ['es2015', 'react'],
+        },
+  },
+  { test:   /\.css$/,
+        loader: 'style-loader!css-loader!cssnext-loader',
+      },
+],},
+  postcss: [
+        nested,
+        cssnext,
+        autoprefixer,
+        csswring,
+    ],
 };
