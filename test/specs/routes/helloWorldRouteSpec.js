@@ -1,17 +1,17 @@
 import React from 'react';
-import { renderToString } from 'react-dom/server';
+import { findDOMNode } from 'react-dom';
+import TestUtils from 'react-addons-test-utils';
+import expect from 'expect';
+
 import HelloWorldRoute from '../../../src/js/routes/helloWorldRoute';
-var assert = require('assert');
-describe('Test Hello World Component', function () {
-  describe('#indexOf()', function () {
-    var helloWorld = 'Hello, World!';
-    it('should containt ' + helloWorld, function () {
 
-      var helloWorldRendered = renderToString(HelloWorldRoute)
-      var a = helloWorldRendered.indexOf(helloWorld);
-      assert.notEqual(a, -1, "The index of '" + helloWorld + "'  is -1 so not found in " + helloWorldRendered);
-    });
-  });
+it('renders an h1', function() {
+  var component = TestUtils.renderIntoDocument(
+    <HelloWorldRoute />
+  );
+  var h1 = TestUtils.findRenderedDOMComponentWithTag(
+     component, 'h1'
+  );
+  expect(findDOMNode(h1).textContent)
+      .toEqual('Hello, World!');
 });
-
-

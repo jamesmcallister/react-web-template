@@ -1,11 +1,10 @@
 import React from 'react';
-var HelloWorld = React.createClass({
-  render: function() {
+
+class HelloWorldRoute extends React.Component {
+  render() {
     return (
-      <p>
-        Hello, World!
-      </p>
-    );
-  },
-});
-export default HelloWorld;
+        <h1>Hello, World!</h1>
+    )
+  }
+}
+export default HelloWorldRoute;

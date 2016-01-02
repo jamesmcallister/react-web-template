@@ -12,7 +12,7 @@
     "test": "npm run test-webpack && npm run test-karma",
     "compile": "cd src/js && webpack",
     "start": "node --harmony ./express/start.js",
-    "jenkins" : "npm run kill3000 ; npm run purge && npm install -DE && npm run compile && npm run test"
+    "jenkins": "npm run kill3000 ; npm run purge && npm install -DE && npm run compile && npm run test"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "babel-preset-react": "6.3.13",
     "cssnext": "1.8.4",
     "csswring": "4.1.1",
+    "expect": "1.13.4",
     "history": "1.13.1",
     "karma": "0.13.15",
     "karma-mocha": "0.2.1",
@@ -41,7 +42,8 @@
     "phantomjs": "1.9.19",
     "phantomjs-polyfill": "0.0.1",
     "postcss-nested": "1.0.0",
-    "react": "0.14.3",
+    "react": "0.14.5",
+    "react-addons-test-utils": "0.14.5",
     "react-dom": "0.14.3",
     "react-router": "1.0.2",
     "react-router-express": "1.0.0",
