@@ -1,14 +1,20 @@
 # react-web-template
 
-'./kill3000' Kills port 3000
-'npm run clean' Removes dist folder
-'npm run purge' Removes dist folder and node-modules
-'npm run test' "npm run test-webpack && npm run test-karma",
-'./compile' "cd src/js && webpack",
-'npm run start' "node --harmony ./express/start.js",
-'npm run jenkins' "npm run kill3000 ; npm run purge && npm install -DE && npm run compile && npm run test"
+`./kill3000`
+ Kills port 3000
 
-## Git dos
+`./compile`
+
+`npm run clean` Removes dist folder
+
+`npm run purge` Removes dist folder and node-modules
+
+`npm run test` Karma tests
+
+`npm run start` Loads local web dev server on locahost:3000
+
+
+## Git Do's
 
     git add .
     git status
@@ -17,7 +23,7 @@
     # git don't know what im doing
     git pull --rebase
 
-## Git don'ts
+## Git Don'ts
 
     git merge
     git pull # maybe okay with merge ff-only set in git config
@@ -25,4 +31,4 @@
 
 Jenkins should run
 
-    npm run jenkins
+    `npm run jenkins`
