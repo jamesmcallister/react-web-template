@@ -4,6 +4,7 @@ var autoprefixer = require('autoprefixer');
 var csswring = require('csswring');
 
 module.exports = {
+  devtool: 'cheap-module-eval-source-map',
   entry: './testLoader.js',
   output: {
     path: '../dist/test',
@@ -18,7 +19,6 @@ module.exports = {
         presets: ['es2015', 'react'],
       },
     },
-      // webpack will process any css file that's imported in to the js file
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader!cssnext-loader',

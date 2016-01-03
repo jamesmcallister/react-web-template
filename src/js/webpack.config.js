@@ -19,7 +19,6 @@ module.exports = {
         presets: ['es2015', 'react'],
       },
     },
-      // Webpack will process any css file that's imported in to the js file
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader!cssnext-loader',
