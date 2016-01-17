@@ -1,7 +1,5 @@
-import React from 'react';
-import { Router, Route, Link } from 'react-router';
+import routes from "./routes";
 import { render } from 'react-dom';
-import HelloWorld from './routes/helloWorldRoute'
 var mainElement = document.querySelector('#main');
 if (!mainElement) {
   mainElement = document.createElement('div');
@@ -10,11 +8,8 @@ if (!mainElement) {
   bodyElement.appendChild(mainElement);
 }
 
-render  (
-<Router>
-  <Route path='/' component={HelloWorld}>
-    <Route path='hello' handeler={HelloWorld} />
-  </Route>
-</Router>,mainElement
 
-)
+render  (routes
+,mainElement
+
+);
