@@ -1,7 +1,5 @@
-var nested = require('postcss-nested');
-var cssnext = require('cssnext');
 var autoprefixer = require('autoprefixer');
-var csswring = require('csswring');
+var precss      = require('precss');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -19,17 +17,15 @@ module.exports = {
         presets: ['es2015', 'react'],
       },
     },
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader!cssnext-loader',
-      },
-    ],
+    {
+      test: /\.css$/,
+      loader: 'style-loader!css-loader!postcss-loader',
+    },
+  ],
   },
   postcss: [
-    nested,
-    cssnext,
+    precss,
     autoprefixer,
-    csswring,
   ],
 
 };
