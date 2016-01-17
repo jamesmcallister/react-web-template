@@ -3,7 +3,7 @@ import router from '../../src/js/router.js';
 var assert = require('assert');
 describe('Test index.html content', function() {
   describe('#indexOf()', function() {
-    var helloWorld = 'Hello, World!';
+    var helloWorld = 'Hello, Root!';
     it('should containt ' + helloWorld, function() {
       var innerHTML = document.querySelector('#main').innerHTML;
       var a = innerHTML.indexOf(helloWorld);

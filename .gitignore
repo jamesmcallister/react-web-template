@@ -29,6 +29,6 @@ node_modules
 .idea
 dist
 
-
 express/bundle.js
 
+instance-config.json
