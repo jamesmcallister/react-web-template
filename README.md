@@ -13,14 +13,13 @@
 
 `npm run start` Loads local web dev server on locahost:3000
 
+need to add 'git clean'.
 
 ## Git Do's
 
     git add .
     git status
     git commit -am "A message here"
-    git pull
-    # git don't know what im doing
     git pull --rebase
 
 ## Git Don'ts
