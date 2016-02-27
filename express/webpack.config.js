@@ -16,7 +16,7 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: './start.js',
   output: {
-    filename: 'bundle.js',
+    filename: '../dist/express/bundle.js',
   },
   externals: nodeModules,
   target: 'node',

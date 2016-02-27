@@ -21,9 +21,4 @@ export default function (req, res) {
       res.status(404).send('Not found')
     }
   })
-  //console.log("made it");
-  //Router.run(routes, req.path, (Root, state) => {
-  //  console.log("made it to run");
-  //  res.send('<!DOCTYPE html>' + React.renderToString(<Root/>));
-  //})
 };
